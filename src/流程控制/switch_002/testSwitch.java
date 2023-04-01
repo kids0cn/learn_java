@@ -13,9 +13,9 @@ public class testSwitch {
                 System.out.println(name);
                 break;
             case "笑":
-                System.out.println(name); //没有break胡穿透
+                System.out.println(name); //没有break会穿透
             default:
-                System.out.println(name);
+                System.out.println("default");
 
         }
     }

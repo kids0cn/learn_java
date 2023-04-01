@@ -1,26 +1,27 @@
 package 流程控制.scanner_001;
-
 import java.util.Scanner;
 
-public class testScanner {
+public class testScanner_0331 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //next 方式获取字符串
+
+        //next方式获取输入
         System.out.println("next方式接收");
         if(scanner.hasNext()){
             String str = scanner.next();
-            System.out.println("输入内容："+str);
+            System.out.println("输入内容为"+str);
         }
 
 
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println("以nextline方式接收");
-        if(scanner.hasNextLine()){
+        //nextline方式输入
+        System.out.println("nextline方式接收");
+        if(scanner.hasNext()){
+        //if(scanner.hasNextLine()){
             String str = scanner.nextLine();
-            System.out.println("输入内容:"+str);
+            System.out.println("输入内容为：\n"+str);
         }
-        scanner1.close();
         scanner.close();
     }
 }

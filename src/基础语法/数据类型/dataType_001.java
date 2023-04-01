@@ -30,10 +30,12 @@ public class dataType_001 {
         int i2 = 010;
         int i3 = 0x10;
 
-        System.out.println(i1);
-        System.out.println(i2);
-        System.out.println(i3);
+        System.out.println("原始值");
+        System.out.println(i1);  //10    默认显示的是二进制，并自动进行转换
+        System.out.println(i2);  //8
+        System.out.println(i3);  //16
         //进制转换
+        System.out.println("进制转换");
         System.out.println(Integer.toBinaryString(i1));
         System.out.println(Integer.toHexString(i1));
         System.out.println(Integer.toOctalString(i1));
